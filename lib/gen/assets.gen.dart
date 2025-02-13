@@ -24,11 +24,52 @@ class $AssetsIconsGen {
   AssetGenImage get a3rdRankFrame =>
       const AssetGenImage('assets/icons/3rdRankFrame.png');
 
+  /// File path: assets/icons/Banknote 2.png
+  AssetGenImage get banknote2 =>
+      const AssetGenImage('assets/icons/Banknote 2.png');
+
+  /// File path: assets/icons/Buildings 2.png
+  AssetGenImage get buildings2 =>
+      const AssetGenImage('assets/icons/Buildings 2.png');
+
+  /// File path: assets/icons/Bus.png
+  AssetGenImage get bus => const AssetGenImage('assets/icons/Bus.png');
+
+  /// File path: assets/icons/Chat Round.png
+  AssetGenImage get chatRound =>
+      const AssetGenImage('assets/icons/Chat Round.png');
+
+  /// File path: assets/icons/Gallery.png
+  AssetGenImage get gallery => const AssetGenImage('assets/icons/Gallery.png');
+
+  /// File path: assets/icons/Magnifer.png
+  AssetGenImage get magnifer =>
+      const AssetGenImage('assets/icons/Magnifer.png');
+
+  /// File path: assets/icons/Map Point.png
+  AssetGenImage get mapPoint =>
+      const AssetGenImage('assets/icons/Map Point.png');
+
   /// File path: assets/icons/Sharp Scissor.svg
   String get sharpScissor => 'assets/icons/Sharp Scissor.svg';
 
+  /// File path: assets/icons/Siren Rounded.png
+  AssetGenImage get sirenRounded =>
+      const AssetGenImage('assets/icons/Siren Rounded.png');
+
+  /// File path: assets/icons/Socket.png
+  AssetGenImage get socket => const AssetGenImage('assets/icons/Socket.png');
+
   /// File path: assets/icons/Swipe Vector.svg
   String get swipeVector => 'assets/icons/Swipe Vector.svg';
+
+  /// File path: assets/icons/User Hand Up.png
+  AssetGenImage get userHandUp =>
+      const AssetGenImage('assets/icons/User Hand Up.png');
+
+  /// File path: assets/icons/Wad Of Money.png
+  AssetGenImage get wadOfMoney =>
+      const AssetGenImage('assets/icons/Wad Of Money.png');
 
   /// File path: assets/icons/about.svg
   String get about => 'assets/icons/about.svg';
@@ -39,11 +80,27 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrowback.svg
   String get arrowback => 'assets/icons/arrowback.svg';
 
+  /// File path: assets/icons/arrwbackImage.zip
+  String get arrwbackImage => 'assets/icons/arrwbackImage.zip';
+
+  /// File path: assets/icons/beer.png
+  AssetGenImage get beer => const AssetGenImage('assets/icons/beer.png');
+
+  /// File path: assets/icons/burger.png
+  AssetGenImage get burger => const AssetGenImage('assets/icons/burger.png');
+
+  /// File path: assets/icons/car.png
+  AssetGenImage get car => const AssetGenImage('assets/icons/car.png');
+
   /// File path: assets/icons/codicon_record.svg
   String get codiconRecord => 'assets/icons/codicon_record.svg';
 
   /// File path: assets/icons/edit-line 1.svg
   String get editLine1 => 'assets/icons/edit-line 1.svg';
+
+  /// File path: assets/icons/eveniconImage.png
+  AssetGenImage get eveniconImage =>
+      const AssetGenImage('assets/icons/eveniconImage.png');
 
   /// File path: assets/icons/face_book_icon.svg
   String get faceBookIcon => 'assets/icons/face_book_icon.svg';
@@ -78,6 +135,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/google_icon.svg
   String get googleIcon => 'assets/icons/google_icon.svg';
 
+  /// File path: assets/icons/grystar.png
+  AssetGenImage get grystar => const AssetGenImage('assets/icons/grystar.png');
+
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
 
@@ -105,6 +165,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/myaccount.svg
   String get myaccount => 'assets/icons/myaccount.svg';
 
+  /// File path: assets/icons/nice.png
+  AssetGenImage get nice => const AssetGenImage('assets/icons/nice.png');
+
   /// File path: assets/icons/personBlackColorIcon.png
   AssetGenImage get personBlackColorIcon =>
       const AssetGenImage('assets/icons/personBlackColorIcon.png');
@@ -126,8 +189,18 @@ class $AssetsIconsGen {
   AssetGenImage get regtanglebox =>
       const AssetGenImage('assets/icons/regtanglebox.png');
 
+  /// File path: assets/icons/save.png
+  AssetGenImage get save => const AssetGenImage('assets/icons/save.png');
+
+  /// File path: assets/icons/saveIcon.png
+  AssetGenImage get saveIcon =>
+      const AssetGenImage('assets/icons/saveIcon.png');
+
   /// File path: assets/icons/solar_document-outline.svg
   String get solarDocumentOutline => 'assets/icons/solar_document-outline.svg';
+
+  /// File path: assets/icons/star00.png
+  AssetGenImage get star00 => const AssetGenImage('assets/icons/star00.png');
 
   /// File path: assets/icons/starImage.png
   AssetGenImage get starImage =>
@@ -135,6 +208,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/support.svg
   String get support => 'assets/icons/support.svg';
+
+  /// File path: assets/icons/svg.png
+  AssetGenImage get svg => const AssetGenImage('assets/icons/svg.png');
 
   /// File path: assets/icons/train.svg
   String get train => 'assets/icons/train.svg';
@@ -150,13 +226,29 @@ class $AssetsIconsGen {
     a1stRankFrame,
     a2ndRankFrame,
     a3rdRankFrame,
+    banknote2,
+    buildings2,
+    bus,
+    chatRound,
+    gallery,
+    magnifer,
+    mapPoint,
     sharpScissor,
+    sirenRounded,
+    socket,
     swipeVector,
+    userHandUp,
+    wadOfMoney,
     about,
     apple,
     arrowback,
+    arrwbackImage,
+    beer,
+    burger,
+    car,
     codiconRecord,
     editLine1,
+    eveniconImage,
     faceBookIcon,
     fachbook,
     femaleIcon,
@@ -167,6 +259,7 @@ class $AssetsIconsGen {
     giftcard,
     goggle,
     googleIcon,
+    grystar,
     home,
     iconParkOutlinePlay,
     iconlen,
@@ -176,15 +269,20 @@ class $AssetsIconsGen {
     membership,
     more,
     myaccount,
+    nice,
     personBlackColorIcon,
     personPlaceholder,
     phHandCoinsLight,
     progress,
     proiconsVideo,
     regtanglebox,
+    save,
+    saveIcon,
     solarDocumentOutline,
+    star00,
     starImage,
     support,
+    svg,
     train,
     tshirt,
     verifiedIcon,
@@ -193,6 +291,10 @@ class $AssetsIconsGen {
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/Alt Arrow Left.png
+  AssetGenImage get altArrowLeft =>
+      const AssetGenImage('assets/images/Alt Arrow Left.png');
 
   /// File path: assets/images/Compass.png
   AssetGenImage get compass => const AssetGenImage('assets/images/Compass.png');
@@ -296,6 +398,9 @@ class $AssetsImagesGen {
   AssetGenImage get thumbnail =>
       const AssetGenImage('assets/images/Thumbnail.png');
 
+  /// File path: assets/images/Upload.png
+  AssetGenImage get upload => const AssetGenImage('assets/images/Upload.png');
+
   /// File path: assets/images/User Follow.png
   AssetGenImage get userFollow =>
       const AssetGenImage('assets/images/User Follow.png');
@@ -336,6 +441,10 @@ class $AssetsImagesGen {
   AssetGenImage get finishsessionbackground =>
       const AssetGenImage('assets/images/finishsessionbackground.png');
 
+  /// File path: assets/images/foureimage.png
+  AssetGenImage get foureimage =>
+      const AssetGenImage('assets/images/foureimage.png');
+
   /// File path: assets/images/gradient-pattern-beestera 2.png
   AssetGenImage get gradientPatternBeestera2 =>
       const AssetGenImage('assets/images/gradient-pattern-beestera 2.png');
@@ -360,13 +469,29 @@ class $AssetsImagesGen {
   AssetGenImage get guidebookthumnail5 =>
       const AssetGenImage('assets/images/guidebookthumnail5.png');
 
+  /// File path: assets/images/hom5Image.jpg
+  AssetGenImage get hom5Image =>
+      const AssetGenImage('assets/images/hom5Image.jpg');
+
   /// File path: assets/images/home2Image.png
   AssetGenImage get home2Image =>
       const AssetGenImage('assets/images/home2Image.png');
 
+  /// File path: assets/images/home4Image.png
+  AssetGenImage get home4Image =>
+      const AssetGenImage('assets/images/home4Image.png');
+
+  /// File path: assets/images/home6Image.png
+  AssetGenImage get home6Image =>
+      const AssetGenImage('assets/images/home6Image.png');
+
   /// File path: assets/images/homeImage.png
   AssetGenImage get homeImage =>
       const AssetGenImage('assets/images/homeImage.png');
+
+  /// File path: assets/images/homeImage7.png
+  AssetGenImage get homeImage7 =>
+      const AssetGenImage('assets/images/homeImage7.png');
 
   /// File path: assets/images/localaicolorimage.png
   AssetGenImage get localaicolorimage =>
@@ -375,6 +500,18 @@ class $AssetsImagesGen {
   /// File path: assets/images/lokalaiimage.png
   AssetGenImage get lokalaiimage =>
       const AssetGenImage('assets/images/lokalaiimage.png');
+
+  /// File path: assets/images/mapImage.png
+  AssetGenImage get mapImage =>
+      const AssetGenImage('assets/images/mapImage.png');
+
+  /// File path: assets/images/oneimage.png
+  AssetGenImage get oneimage =>
+      const AssetGenImage('assets/images/oneimage.png');
+
+  /// File path: assets/images/outlineStarImage.png
+  AssetGenImage get outlineStarImage =>
+      const AssetGenImage('assets/images/outlineStarImage.png');
 
   /// File path: assets/images/profile_image.jpeg
   AssetGenImage get profileImage =>
@@ -422,6 +559,10 @@ class $AssetsImagesGen {
   AssetGenImage get submitvideobackground =>
       const AssetGenImage('assets/images/submitvideobackground.png');
 
+  /// File path: assets/images/threeimage.png
+  AssetGenImage get threeimage =>
+      const AssetGenImage('assets/images/threeimage.png');
+
   /// File path: assets/images/thumbnail155.png
   AssetGenImage get thumbnail155 =>
       const AssetGenImage('assets/images/thumbnail155.png');
@@ -442,6 +583,10 @@ class $AssetsImagesGen {
   AssetGenImage get tirimage =>
       const AssetGenImage('assets/images/tirimage.png');
 
+  /// File path: assets/images/towimage.png
+  AssetGenImage get towimage =>
+      const AssetGenImage('assets/images/towimage.png');
+
   /// File path: assets/images/tumnail22.webp
   AssetGenImage get tumnail22 =>
       const AssetGenImage('assets/images/tumnail22.webp');
@@ -451,6 +596,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    altArrowLeft,
     compass,
     homeScreen,
     logInBackground,
@@ -477,6 +623,7 @@ class $AssetsImagesGen {
     thumbnailBack2,
     thumbnailBackground1,
     thumbnail,
+    upload,
     userFollow,
     ai,
     appBarProfileImage,
@@ -488,16 +635,24 @@ class $AssetsImagesGen {
     comingsoonblur,
     explashscreen,
     finishsessionbackground,
+    foureimage,
     gradientPatternBeestera2,
     guidebookthumnail1,
     guidebookthumnail2,
     guidebookthumnail3,
     guidebookthumnail4,
     guidebookthumnail5,
+    hom5Image,
     home2Image,
+    home4Image,
+    home6Image,
     homeImage,
+    homeImage7,
     localaicolorimage,
     lokalaiimage,
+    mapImage,
+    oneimage,
+    outlineStarImage,
     profileImage,
     save,
     signUpScreenIconFour,
@@ -510,11 +665,13 @@ class $AssetsImagesGen {
     splashbacroundimage,
     starImage,
     submitvideobackground,
+    threeimage,
     thumbnail155,
     thumbnail1999,
     thumbnail66,
     thumnail33,
     tirimage,
+    towimage,
     tumnail22,
     vector,
   ];

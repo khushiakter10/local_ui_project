@@ -64,6 +64,9 @@ class AppColors {
   /// Color: #5C5490
   static const Color c5C5490 = Color(0xFF5C5490);
 
+  /// Color: #6B66A5
+  static const Color c6B66A5 = Color(0xFF6B66A5);
+
   /// Color: #7978B4
   static const Color c7978B4 = Color(0xFF7978B4);
 
@@ -144,4 +147,5 @@ class AppColors {
 
   /// Color: #FFFFFFFF
   static const Color scaffoldColor = Color(0xFFFFFFFF);
+
 }

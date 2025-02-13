@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:training_app/constants/text_font_style.dart';
 import 'package:training_app/gen/assets.gen.dart';
+import 'package:training_app/helpers/all_routes.dart';
+import 'package:training_app/helpers/navigation_service.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -50,29 +52,34 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                     UIHelper.verticalSpace(400.h),
-                    Container(
-                      width: 311,
-                      height: 56,
-                      padding: const EdgeInsets.all(16),
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(19),
+                    GestureDetector(
+                      onTap: (){
+                        NavigationService.navigateTo(Routes.logInScreen);
+                      },
+                      child: Container(
+                        width: 311,
+                        height: 56,
+                        padding: const EdgeInsets.all(16),
+                        decoration: ShapeDecoration(
+                          color: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(19),
+                          ),
+                          shadows: [
+                            BoxShadow(
+                              color: Color(0x3F000000),
+                              blurRadius: 4.r,
+                              offset: Offset(0, 1),
+                              spreadRadius: 2,
+                            )
+                          ],
                         ),
-                        shadows: [
-                          BoxShadow(
-                            color: Color(0x3F000000),
-                            blurRadius: 4.r,
-                            offset: Offset(0, 1),
-                            spreadRadius: 2,
-                          )
-                        ],
-                      ),
-                      child: Padding(
-                        padding:  EdgeInsets.symmetric(horizontal: 10.h),
-                        child: Text("01- Login Process",
-                            style: TextFontStyle
-                                .loginprocesheadline16c111933Stylemontserrat),
+                        child: Padding(
+                          padding:  EdgeInsets.symmetric(horizontal: 10.h),
+                          child: Text("01- Login Process",
+                              style: TextFontStyle
+                                  .loginprocesheadline16c111933Stylemontserrat),
+                        ),
                       ),
                     ),
                   ]),

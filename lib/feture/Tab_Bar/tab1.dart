@@ -1,69 +1,68 @@
-//
-// import 'package:flutter/material.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:training_app/feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/log_in_screen.dart';
-//
-// import '../log_in_sign_up_and_sign_in/presentation/sign_up_two/presntation/sign_up_two_screen.dart';
-//
-// class TabBarScreens extends StatefulWidget {
-//   const TabBarScreens({super.key});
-//
-//   @override
-//   State<TabBarScreens> createState() => _TabBarScreensState();
-// }
-//
-// class _TabBarScreensState extends State<TabBarScreens>
-//     with SingleTickerProviderStateMixin {
-//   late TabController tabController;
-//   @override
-//   void initState() {
-//     tabController = TabController(length: 2, vsync: this);
-//     super.initState();
-//   }
-//
-//   @override
-//   void dispose() {
-//     tabController.dispose();
-//     super.dispose();
-//   }
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       appBar: AppBar(
-//         title: Text(
-//           "TabBar",
-//           style: TextStyle(color: Colors.red),
-//         ),
-//       ),
-//           body: SingleChildScrollView(
-//             child: Padding(
-//               padding:   EdgeInsets.all(10.0),
-//               child: Column(
-//                  children: [
-//                    Container(
-//                      height: 50.h,
-//                      width:  400,
-//                      decoration: BoxDecoration(
-//                        color: Colors.red,
-//                        borderRadius: BorderRadius.circular(7.r),
-//                      ),
-//                      child: Column(
-//                        children: [
-//                          Padding(padding: EdgeInsets.all(5),child: TabBar(
-//                            controller: tabController,
-//                              tabs: [
-//                            Tab(text: 'ferdaus',),
-//                            Tab(text: 'ferdaus',),
-//                          ]),)
-//                        ],
-//                      ),
-//                    )
-//                  ],
-//               ),
-//             ),
-//           ),
-//     );
-//   }
-// }
+import 'package:flutter/material.dart';
+import 'package:fl_chart/fl_chart.dart';
+
+class TimeDifferenceChart extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Time Difference: Bangladesh vs India"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: LineChart(
+          LineChartData(
+            gridData: FlGridData(show: true),
+            titlesData: FlTitlesData(
+              bottomTitles: AxisTitles(
+                sideTitles: SideTitles(
+                  showTitles: true,
+                  getTitlesWidget: (value, meta) {
+                    switch (value.toInt()) {
+                      case 0:
+                        return Text('MON');
+                      case 1:
+                        return Text('TUE');
+                      case 2:
+                        return Text('WED');
+                      case 3:
+                        return Text('THU');
+                      case 4:
+                        return Text('FRI');
+                      case 5:
+                        return Text('SAT');
+                      case 6:
+                        return Text('SUN');
+                      default:
+                        return Text('');
+                    }
+                  },
+                ),
+              ),
+              leftTitles: AxisTitles(
+                sideTitles: SideTitles(showTitles: true),
+              ),
+            ),
+            borderData: FlBorderData(show: true, border: Border.all(color: Colors.black, width: 1)),
+            lineBarsData: [
+              LineChartBarData(
+                spots: [
+                  FlSpot(0, 0.5), // MON
+                  FlSpot(1, 0.5), // TUE
+                  FlSpot(2, 0.5), // WED
+                  FlSpot(3, 0.5), // THU
+                  FlSpot(4, 0.5), // FRI
+                  FlSpot(5, 0.5), // SAT
+                  FlSpot(6, 0.5), // SUN
+                ],
+                isCurved: true,
+                color: Colors.red,
+                belowBarData: BarAreaData(show: true, color: (Colors.blue),
+              ),
+              )],
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../feture/auth/otp/presentation/otp_screen.dart';
+import '../feture/explore/presntation/explore_screen.dart';
 import '../feture/log_in_sign_up_and_sign_in/presentation/log_in/log_in_sign_up/presentation/log_in_signin_screen.dart';
 import '../feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/log_in_screen.dart';
+import '../feture/map/presentation/map_screen.dart';
 import '../gen/assets.gen.dart';
 import '../gen/colors.gen.dart';
 class NavigationScreen extends StatefulWidget {
@@ -21,8 +22,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
     const LogInScreen(),
     const OtpScreen(),
     const LogInSignUpScreen(),
-    const LogInSignUpScreen(),
-    const LogInSignUpScreen(),
+    const ExploreScreen(),
+    const MapScreen(),
 
 
   ];

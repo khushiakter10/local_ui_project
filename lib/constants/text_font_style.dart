@@ -50,9 +50,16 @@ class TextFontStyle {
     fontSize: 8.sp,
     fontWeight: FontWeight.w600,
 
-  ); static final w600cB7B9D7montserratmap= GoogleFonts.montserrat(
+  );
+ static final w600cB7B9D7montserratmap= GoogleFonts.montserrat(
     color: AppColors.cB7B9D7,
     fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+static final w600cB7B9D7montserratmap9= GoogleFonts.montserrat(
+    color: AppColors.cB7B9D7,
+    fontSize: 9.sp,
     fontWeight: FontWeight.w600,
   );
 
@@ -66,6 +73,16 @@ class TextFontStyle {
     color: AppColors.c5C5490,
     fontSize: 12.sp,
     fontWeight: FontWeight.w600,
+  );
+ static final headlineremeberc5C5490w40013= GoogleFonts.montserrat(
+    color: AppColors.c5C5490,
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w400,
+  );
+ static final headlineremeberc5C549012= GoogleFonts.montserrat(
+    color: AppColors.c5C5490,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
   );
  static final headlinecontinuc7978B4= GoogleFonts.montserrat(
     color: AppColors.c7978B4,
@@ -88,6 +105,11 @@ class TextFontStyle {
     fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
+   static final c342979w600= GoogleFonts.montserrat(
+    color: AppColors.c342979,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+  );
    static final cD4D5E7= GoogleFonts.montserrat(
     color: AppColors.cD4D5E7,
     fontSize: 8.sp,
@@ -103,8 +125,24 @@ class TextFontStyle {
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
+   static final c342979montserrat10= GoogleFonts.montserrat(
+    color: AppColors.c342979,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w600,
+  );
+   static final c342979montserrat12= GoogleFonts.montserrat(
+    color: AppColors.c342979,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
    static final c8A8EA7= GoogleFonts.montserrat(
     color: AppColors.c8A8EA7,
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+ static final currncyc6B66A5hedline8= GoogleFonts.montserrat(
+    color: AppColors.c6B66A5,
     fontSize: 8.sp,
     fontWeight: FontWeight.w600,
   );

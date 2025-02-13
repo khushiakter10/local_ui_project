@@ -44,7 +44,7 @@ class _LogInSignUpScreenState extends State<LogInSignUpScreen> {
                 child: Padding(
                   padding: EdgeInsets.all(4.sp),
                   child: TabBar(
-                    padding: EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(4),
                     dividerColor: Colors.transparent,
                     labelColor: Colors.white,
                     unselectedLabelColor: Colors.black54,
