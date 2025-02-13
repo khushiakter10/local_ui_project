@@ -33,13 +33,11 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
               ),
             ),
           ),
-
-          // DraggableScrollableSheet
           DraggableScrollableSheet(
-            initialChildSize: 0.4,
+            initialChildSize: 0.3,
             minChildSize: 0.1,
-            maxChildSize: 0.8,
-            builder: (BuildContext context, ScrollController scrollController) {
+            maxChildSize: 0.9,
+            builder: ( context, ScrollController ) {
               return Container(
                 decoration: const BoxDecoration(
                   color: Colors.white,
@@ -54,22 +52,19 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: EdgeInsets.symmetric(vertical: 7.h),
-                            child: Container(
-                              width: 50,
-                              decoration: ShapeDecoration(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.r),
-                                  side: const BorderSide(
-                                    width: 5,
-                                    strokeAlign: BorderSide.strokeAlignCenter,
-                                    color: AppColors.c000000,
-                                  ),
+                          Container(
+                            width: 50,
+                            decoration: ShapeDecoration(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.r),
+                                side: const BorderSide(
+                                  width: 5,
+                                  strokeAlign: BorderSide.strokeAlignCenter,
+                                  color: AppColors.c000000,
                                 ),
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                       UIHelper.verticalSpace(10.h),
@@ -104,6 +99,7 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                       SizedBox(
                         height: 70.h,
                         child: ListView.builder(
+                          controller: ScrollController,
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           shrinkWrap: true,

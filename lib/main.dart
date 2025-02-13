@@ -22,7 +22,9 @@ import 'package:training_app/splash_screen.dart';
 import 'button_navigation_bar/button_navigation_bar.dart';
 import 'feture/Tab_Bar/presentation/Tab_Bar_Screen.dart';
 import 'feture/Tab_Bar/presentation/grapchart_practice.dart';
+import 'feture/Tab_Bar/presentation/tabbar3.dart';
 import 'feture/Tab_Bar/presentation/tabbar_one_screen.dart';
+import 'feture/Tab_Bar/presentation/testScreen.dart';
 import 'feture/Tab_Bar/tab1.dart';
 import 'feture/Tab_Bar/tab2.dart';
 import 'feture/auth/otp/presentation/otp_screen.dart';
@@ -34,6 +36,7 @@ import 'feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/log_i
 import 'feture/log_in_sign_up_and_sign_in/presentation/sign_up/presentation/sign_up_screen.dart';
 import 'feture/map/presentation/map_screen.dart';
 import 'feture/sacredcity/presentation/sacredcity_screen.dart';
+import 'feture/share_video/presentation/share_video_screen.dart';
 import 'feture/sortboy/presentation/sort_by_screen.dart';
 import 'feture/topkapi/presentation/topkapi_screen.dart';
 
@@ -111,7 +114,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           onGenerateRoute: RouteGenerator.generateRoute,
-          home:    BarChartSample2(),
+          home: ShareScreen(),
 
         );
       },
