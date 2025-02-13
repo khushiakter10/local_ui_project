@@ -22,8 +22,8 @@ import 'package:training_app/splash_screen.dart';
 import 'button_navigation_bar/button_navigation_bar.dart';
 import 'feture/Tab_Bar/presentation/youtube.dart';
 import 'feture/Tab_Bar/presentation/fi_videoplayer.dart';
-import 'feture/Tab_Bar/presentation/tabbar3.dart';
-import 'feture/Tab_Bar/presentation/tabbar_one_screen.dart';
+import 'feture/Tab_Bar/presentation/youtubevideo.dart';
+import 'feture/Tab_Bar/presentation/imagepicker.dart';
 import 'feture/Tab_Bar/presentation/testScreenfichart.dart';
 import 'feture/Tab_Bar/tab1.dart';
 import 'feture/Tab_Bar/tab2.dart';
@@ -114,7 +114,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           onGenerateRoute: RouteGenerator.generateRoute,
-          home:  ImageScreen(),
+          home:  ImagePickerScreen(),
 
         );
       },

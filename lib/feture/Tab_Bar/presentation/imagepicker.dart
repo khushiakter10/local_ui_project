@@ -3,12 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-class ImageScreen extends StatefulWidget {
+class ImagePickerScreen extends StatefulWidget {
   @override
-  _ImageScreenState createState() => _ImageScreenState();
+  _ImagePickerScreenState createState() => _ImagePickerScreenState();
 }
 
-class _ImageScreenState extends State<ImageScreen> {
+class _ImagePickerScreenState extends State<ImagePickerScreen> {
   File? _image;  // Use nullable type to allow null initially
 
   final ImagePicker _picker = ImagePicker();
