@@ -65,6 +65,7 @@ class _LandMarkScreenState extends State<LandMarkScreen> {
                         BorderRadius.vertical(top: Radius.circular(16)),
                   ),
                   child: SingleChildScrollView(
+                    controller: scrollController,
                     padding: EdgeInsets.symmetric(
                         vertical: 18.0.h, horizontal: 20.w),
                     child: Column(
@@ -131,7 +132,6 @@ class _LandMarkScreenState extends State<LandMarkScreen> {
                         SizedBox(
                           height: 70.h,
                           child: ListView.builder(
-                            controller: scrollController,
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             shrinkWrap: true,

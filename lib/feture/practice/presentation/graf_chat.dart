@@ -73,7 +73,7 @@ class _DensityGraphState extends State<DensityGraph> {
                 ],
               ),
               SizedBox(height: 15),
-             Row(
+              Row(
                 children: [
                   Text(
                     "It is not busy right now",

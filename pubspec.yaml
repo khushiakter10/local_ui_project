@@ -79,6 +79,8 @@ dependencies:
   percent_indicator: ^4.2.4
   fl_chart: ^0.70.2
   share_plus: ^10.1.4
+  google_maps_flutter: ^2.10.0
+  dashed_circular_progress_bar: ^0.0.6
 
 dev_dependencies:
   flutter_test:

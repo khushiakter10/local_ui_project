@@ -20,25 +20,20 @@ import 'package:training_app/loading_screen.dart';
 import 'package:training_app/networks/dio/dio.dart';
 import 'package:training_app/splash_screen.dart';
 import 'button_navigation_bar/button_navigation_bar.dart';
-import 'feture/Tab_Bar/presentation/youtube.dart';
-import 'feture/Tab_Bar/presentation/fi_videoplayer.dart';
-import 'feture/Tab_Bar/presentation/youtubevideo.dart';
-import 'feture/Tab_Bar/presentation/imagepicker.dart';
-import 'feture/Tab_Bar/presentation/testScreenfichart.dart';
-import 'feture/Tab_Bar/tab1.dart';
-import 'feture/Tab_Bar/tab2.dart';
 import 'feture/auth/otp/presentation/otp_screen.dart';
-import 'feture/ayasofya/presentation/ayasofya_screeen.dart';
-import 'feture/explore/presntation/explore_screen.dart';
-import 'feture/landmark/presentation/landmark_screen.dart';
-import 'feture/log_in_sign_up_and_sign_in/presentation/log_in/log_in_sign_up/presentation/log_in_signin_screen.dart';
+import 'feture/exploare/presentation/ayasofya_screeen.dart';
+import 'feture/exploare/presentation/explore_screen.dart';
+import 'feture/exploare/presentation/landmark_screen.dart';
 import 'feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/log_in_screen.dart';
-import 'feture/log_in_sign_up_and_sign_in/presentation/sign_up/presentation/sign_up_screen.dart';
-import 'feture/map/presentation/map_screen.dart';
-import 'feture/sacredcity/presentation/sacredcity_screen.dart';
-import 'feture/share_video/presentation/share_video_screen.dart';
-import 'feture/sortboy/presentation/sort_by_screen.dart';
-import 'feture/topkapi/presentation/topkapi_screen.dart';
+import 'feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/sign_up_screen.dart';
+import 'feture/practice/presentation/fl_video.dart';
+import 'feture/practice/presentation/map_screen.dart';
+import 'feture/exploare/presentation/sacredcity_screen.dart';
+import 'feture/practice/presentation/share_video_screen.dart';
+import 'feture/exploare/presentation/sort_by_screen.dart';
+import 'feture/exploare/presentation/topkapi_screen.dart';
+import 'feture/practice/presentation/graf_chat.dart';
+import 'feture/practice/presentation/youtube_2.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -114,7 +109,7 @@ class UtillScreenMobile extends StatelessWidget {
           },
           navigatorKey: NavigationService.navigatorKey,
           onGenerateRoute: RouteGenerator.generateRoute,
-          home:  ImagePickerScreen(),
+          home: DensityGraph(),
 
         );
       },

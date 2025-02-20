@@ -48,6 +48,7 @@ class _SacredCityScreenState extends State<SacredCityScreen> {
                     BorderRadius.vertical(top: Radius.circular(16)),
                   ),
                   child: SingleChildScrollView(
+                   controller: scrollController,
                     padding: EdgeInsets.symmetric(
                         vertical: 18.0.h, horizontal: 20.w),
                     child: Column(

@@ -27,7 +27,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 80,),
+               SizedBox(height: 70.h,),
               Row(
                 children: [
                   UIHelper.horizontalSpace(9.w),
@@ -40,12 +40,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                     child: Row(
                       children: [
-                        Image.asset(Assets.images.mapPoint.path, height: 20),
+                        Image.asset(Assets.images.mapPoint.path, height: 19.h),
                         UIHelper.horizontalSpace(5.w),
                         Text("İstanbul",
                             style: TextFontStyle.w600cB7B9D7montserratmap),
                         UIHelper.horizontalSpace(5.w),
-                        Image.asset(Assets.images.check.path, height: 20)
+                        Image.asset(Assets.images.check.path, height: 19.h)
                       ],
                     ),
                   ),
@@ -59,7 +59,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                     child: Row(
                       children: [
-                        Image.asset(Assets.images.magnifer.path, height: 20),
+                        Image.asset(Assets.images.magnifer.path, height: 19.h),
                         UIHelper.horizontalSpace(5.w),
                         Text("İstanbul",
                             style: TextFontStyle.w600cB7B9D7montserratmap),
@@ -256,7 +256,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               SizedBox(
                 height: 150,
                 child: ListView.builder(
-
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: 9,
@@ -460,7 +459,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                                                 .w600cB7B9D7montserratmap9
                                                 .copyWith(
                                                 color: const Color(0xffcb7b9d7),
-                                                fontSize: 14)),
+                                                fontSize: 14.sp)),
                                       ],
                                     )
                                   ],
@@ -474,7 +473,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   },
                 ),
               ),
-              UIHelper.verticalSpace(50.h),
+              UIHelper.verticalSpace(10.h)
             ],
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:training_app/feture/log_in_sign_up_and_sign_in/presentation/sign_up/presentation/sign_up_screen.dart';
+import 'package:training_app/feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/sign_up_screen.dart';
 
 import '../../../../../../constants/text_font_style.dart';
 import '../../../../../../gen/assets.gen.dart';

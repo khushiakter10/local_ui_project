@@ -8,14 +8,15 @@ import 'package:training_app/helpers/navigation_service.dart';
 import 'package:training_app/helpers/ui_helpers.dart';
 import '../../../constants/text_font_style.dart';
 import '../../../gen/assets.gen.dart';
-class MapScreen extends StatefulWidget {
-  const MapScreen({super.key});
+
+class TopKapiScreen extends StatefulWidget {
+  const TopKapiScreen({super.key});
 
   @override
-  State<MapScreen> createState() => _MapScreenState();
+  State<TopKapiScreen> createState() => _TopKapiScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
+class _TopKapiScreenState extends State<TopKapiScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -23,6 +24,7 @@ class _MapScreenState extends State<MapScreen> {
       child: Scaffold(
         body: Stack(
           children: [
+            // Background image
             Container(
               height: double.infinity,
               width: double.infinity,
@@ -36,9 +38,9 @@ class _MapScreenState extends State<MapScreen> {
 
             // DraggableScrollableSheet
             DraggableScrollableSheet(
-              initialChildSize: 0.4,
-              minChildSize: 0.1,
-              maxChildSize: 0.8,
+              initialChildSize: 0.4, // Initial size of the sheet (40%)
+              minChildSize: 0.1,     // Minimum size the sheet can be dragged to
+              maxChildSize: 0.8,     // Maximum size the sheet can be dragged to
               builder: (BuildContext context, ScrollController scrollController) {
                 return Container(
                   decoration: const BoxDecoration(
@@ -46,6 +48,7 @@ class _MapScreenState extends State<MapScreen> {
                     borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
                   ),
                   child: SingleChildScrollView(
+                    controller: scrollController,
                     padding:  EdgeInsets.symmetric(vertical: 18.0.h,horizontal: 20.w),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,8 +153,13 @@ class _MapScreenState extends State<MapScreen> {
                               Image.asset(Assets.images.meditationRound.path,
                                   height: 24.h),
                               UIHelper.horizontalSpace(10.w),
-                              Text("Lorem İpsum",
-                                  style: TextFontStyle.headlinec34297910w400learn),
+                              GestureDetector(
+                                  onTap: (){
+                                    NavigationService.navigateTo(Routes.sortByScreen);
+                                  },
+                                child: Text("Lorem İpsum",
+                                    style: TextFontStyle.headlinec34297910w400learn),
+                              ),
                               UIHelper.horizontalSpace(123.w),
                               Text("See All",
                                   style: TextFontStyle.headlinec34297910w400learn),
@@ -164,7 +172,6 @@ class _MapScreenState extends State<MapScreen> {
                         SizedBox(
                           height: 150,
                           child: ListView.builder(
-                            controller: scrollController,
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
                             itemCount: 9,
@@ -189,22 +196,17 @@ class _MapScreenState extends State<MapScreen> {
                                                 topLeft: Radius.circular(10.r)),
                                             image: DecorationImage(
                                                 image:
-                                                AssetImage(Assets.images.home4Image.path),
+                                                AssetImage(Assets.images.hom5Image.path),
                                                 fit: BoxFit.cover)),
-                                        child: GestureDetector(
-                                          onTap: (){
-                                            NavigationService.navigateTo(Routes.exploreScreen);
-                                          },
-                                          child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.end,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsets.only(right: 10),
-                                                child: Image.asset(Assets.icons.svg.path,
-                                                    height: 30.h, alignment: Alignment.topRight),
-                                              ),
-                                            ],
-                                          ),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.end,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(right: 10),
+                                              child: Image.asset(Assets.icons.svg.path,
+                                                  height: 30.h, alignment: Alignment.topRight),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                       Container(
@@ -220,11 +222,11 @@ class _MapScreenState extends State<MapScreen> {
                                             children: [
                                               UIHelper.verticalSpace(7.h),
                                               Text(
-                                                "Lorem Ipsum",
+                                                "Hagia Sophia",
                                                 style: TextFontStyle.c342979montserrat10,
                                               ),
                                               Text(
-                                                "Lorem Ipsum",
+                                                "Mosque",
                                                 style: TextFontStyle.w600cB7B9D7montserratmap9,
                                               ),
 
@@ -288,103 +290,103 @@ class _MapScreenState extends State<MapScreen> {
                         UIHelper.verticalSpace(10.h),
                         SizedBox(
                           height: 150,
-                          child: ListView.builder(
-
-                            shrinkWrap: true,
-                            scrollDirection: Axis.horizontal,
-                            itemCount: 9,
-                            itemBuilder: (BuildContext context,index) {
-                              return   Padding(
-                                padding:  const EdgeInsets.only(right: 9),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
-                                    borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(10.r),
-                                        topLeft: Radius.circular(10.r)),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      Container(
-                                        height: 75,
-                                        width: 146,
-                                        decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.only(
-                                                topRight: Radius.circular(10.r),
-                                                topLeft: Radius.circular(10.r)),
-                                            image: DecorationImage(
-                                                image:
-                                                AssetImage(Assets.images.home4Image.path),
-                                                fit: BoxFit.cover)),
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.end,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(right: 10),
-                                              child: Image.asset(Assets.icons.svg.path,
-                                                  height: 30.h, alignment: Alignment.topRight),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 75,
-                                        width: 146,
-                                        decoration: const BoxDecoration(
-                                          color: Colors.white,
-                                        ),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                          child: Expanded(
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 9,
+                              itemBuilder: (BuildContext context,index) {
+                                return   Padding(
+                                  padding:  const EdgeInsets.only(right: 9),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(10.r),
+                                          topLeft: Radius.circular(10.r)),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          height: 75,
+                                          width: 146,
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.only(
+                                                  topRight: Radius.circular(10.r),
+                                                  topLeft: Radius.circular(10.r)),
+                                              image: DecorationImage(
+                                                  image:
+                                                  AssetImage(Assets.images.hom5Image.path),
+                                                  fit: BoxFit.cover)),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.end,
                                             children: [
-                                              UIHelper.verticalSpace(7.h),
-                                              Text(
-                                                "Lorem Ipsum",
-                                                style: TextFontStyle.c342979montserrat10,
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 10),
+                                                child: Image.asset(Assets.icons.svg.path,
+                                                    height: 30.h, alignment: Alignment.topRight),
                                               ),
-                                              Text(
-                                                "Lorem Ipsum",
-                                                style: TextFontStyle.w600cB7B9D7montserratmap9,
-                                              ),
-
-                                              Row(
-                                                children: [
-                                                  RatingBar.builder(
-                                                    itemSize: 12.h,
-                                                    initialRating: 3.5,
-                                                    minRating: 1,
-                                                    direction: Axis.horizontal,
-                                                    // allowHalfRating: true,
-                                                    itemCount: 5,
-                                                    itemPadding:
-                                                    const EdgeInsets.symmetric(horizontal: 2),
-                                                    itemBuilder: (context, _) => Image.asset(
-                                                        Assets.icons.grystar.path,
-                                                        height: 5,
-                                                        color: AppColors.c5C5490),
-                                                    onRatingUpdate: (rating) {
-                                                      if (kDebugMode) print(rating);
-                                                    },
-                                                  ),
-                                                  UIHelper.horizontalSpace(7.w),
-                                                  Text("720",
-                                                      style: TextFontStyle
-                                                          .w600cB7B9D7montserratmap9
-                                                          .copyWith(
-                                                          color: const Color(0xffcb7b9d7),
-                                                          fontSize: 14)),
-                                                ],
-                                              )
                                             ],
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Container(
+                                          height: 75,
+                                          width: 146,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                UIHelper.verticalSpace(7.h),
+                                                Text(
+                                                  "Hagia Sophia",
+                                                  style: TextFontStyle.c342979montserrat10,
+                                                ),
+                                                Text(
+                                                  "Mosque",
+                                                  style: TextFontStyle.w600cB7B9D7montserratmap9,
+                                                ),
+
+                                                Row(
+                                                  children: [
+                                                    RatingBar.builder(
+                                                      itemSize: 12.h,
+                                                      initialRating: 3.5,
+                                                      minRating: 1,
+                                                      direction: Axis.horizontal,
+                                                      // allowHalfRating: true,
+                                                      itemCount: 5,
+                                                      itemPadding:
+                                                      const EdgeInsets.symmetric(horizontal: 2),
+                                                      itemBuilder: (context, _) => Image.asset(
+                                                          Assets.icons.grystar.path,
+                                                          height: 5,
+                                                          color: AppColors.c5C5490),
+                                                      onRatingUpdate: (rating) {
+                                                        if (kDebugMode) print(rating);
+                                                      },
+                                                    ),
+                                                    UIHelper.horizontalSpace(7.w),
+                                                    Text("720",
+                                                        style: TextFontStyle
+                                                            .w600cB7B9D7montserratmap9
+                                                            .copyWith(
+                                                            color: const Color(0xffcb7b9d7),
+                                                            fontSize: 14)),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              );
-                            },
+                                );
+                              },
+                            ),
                           ),
                         ),
                         UIHelper.verticalSpace(30.h),

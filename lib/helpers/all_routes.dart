@@ -2,15 +2,15 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 
 import '../feture/auth/otp/presentation/otp_screen.dart';
-import '../feture/ayasofya/presentation/ayasofya_screeen.dart';
-import '../feture/explore/presntation/explore_screen.dart';
-import '../feture/landmark/presentation/landmark_screen.dart';
+import '../feture/exploare/presentation/ayasofya_screeen.dart';
+import '../feture/exploare/presentation/explore_screen.dart';
+import '../feture/exploare/presentation/landmark_screen.dart';
 import '../feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/log_in_screen.dart';
-import '../feture/log_in_sign_up_and_sign_in/presentation/sign_up/presentation/sign_up_screen.dart';
-import '../feture/map/presentation/map_screen.dart';
-import '../feture/sacredcity/presentation/sacredcity_screen.dart';
-import '../feture/sortboy/presentation/sort_by_screen.dart';
-import '../feture/topkapi/presentation/topkapi_screen.dart';
+import '../feture/log_in_sign_up_and_sign_in/presentation/log_in/presentation/sign_up_screen.dart';
+import '../feture/practice/presentation/map_screen.dart';
+import '../feture/exploare/presentation/sacredcity_screen.dart';
+import '../feture/exploare/presentation/sort_by_screen.dart';
+import '../feture/exploare/presentation/topkapi_screen.dart';
 import '../splash_screen.dart';
 
 

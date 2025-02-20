@@ -47,6 +47,7 @@ class _SortByScreenState extends State<SortByScreen> {
                   borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
                 ),
                 child: SingleChildScrollView(
+                  controller: scrollController,
                   padding:
                   EdgeInsets.symmetric(vertical: 18.0.h, horizontal: 20.w),
                   child: Column(
@@ -235,7 +236,6 @@ class _SortByScreenState extends State<SortByScreen> {
                       SizedBox(
                         height: 150,
                         child: ListView.builder(
-                          controller: scrollController,
                           scrollDirection: Axis.horizontal,
                           itemCount: 9,
                           itemBuilder: (BuildContext context, index) {

@@ -44,6 +44,7 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                   borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
                 ),
                 child: SingleChildScrollView(
+                  controller: ScrollController,
                   padding:
                   EdgeInsets.symmetric(vertical: 18.0.h, horizontal: 20.w),
                   child: Column(
@@ -99,7 +100,6 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                       SizedBox(
                         height: 70.h,
                         child: ListView.builder(
-                          controller: ScrollController,
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           shrinkWrap: true,
@@ -145,7 +145,7 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                                 Image.asset(
                                     Assets.icons.grystar
                                         .path,
-                                    height: 5,
+                                    height: 4.h,
                                     color: AppColors
                                         .c5C5490),
                             onRatingUpdate: (rating) {
@@ -160,11 +160,11 @@ class _AyaTolLahsScreenState extends State<AyaTolLahsScreen> {
                                   .copyWith(
                                   color: const Color(
                                       0xffcb7b9d7),
-                                  fontSize: 14)),
+                                  fontSize: 14.sp)),
                         ],
                       ),
 
-                      UIHelper.verticalSpace(25.h),
+
                     ],
                   ),
                 ),
